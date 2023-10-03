@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="218.0" prefWidth="443.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.example.passwordmanager.MainPaneController">
+   <children>
+      <TextField fx:id="websiteTextField" layoutX="112.0" layoutY="40.0" prefHeight="25.0" prefWidth="275.0" promptText="Website Name" />
+      <Label fx:id="websiteLabel" layoutX="47.0" layoutY="44.0" text="Website:" />
+      <Label fx:id="emailLabel" layoutX="47.0" layoutY="79.0" text="Email:" />
+      <TextField fx:id="emailTextField" layoutX="112.0" layoutY="75.0" prefHeight="25.0" prefWidth="275.0" promptText="Email/Username" />
+      <Label fx:id="passwordLabel" layoutX="43.0" layoutY="116.0" text="Password:" />
+      <TextField fx:id="passwordTextField" layoutX="112.0" layoutY="112.0" promptText="Password" />
+      <Button fx:id="generatePasswordButton" layoutX="272.0" layoutY="112.0" mnemonicParsing="false" text="Generate Password" onAction="#onGeneratePasswordButtonClicked"/>
+      <Button fx:id="saveButton" layoutX="112.0" layoutY="154.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="275.0" text="Save" onAction="#onSaveButtonClicked" />
+   </children>
+</Pane>
